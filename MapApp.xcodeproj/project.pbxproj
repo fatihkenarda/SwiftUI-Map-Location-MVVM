@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EADAD1B2C21CFD2009B228C /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EADAD1A2C21CFD2009B228C /* LocationMapAnnotationView.swift */; };
 		6EC1E3302C1C8954009C999C /* MapAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1E32F2C1C8954009C999C /* MapAppApp.swift */; };
 		6EC1E3322C1C8954009C999C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1E3312C1C8954009C999C /* ContentView.swift */; };
 		6EC1E3372C1C8956009C999C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EC1E3362C1C8956009C999C /* Preview Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6EADAD1A2C21CFD2009B228C /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
 		6EC1E32C2C1C8954009C999C /* MapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EC1E32F2C1C8954009C999C /* MapAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppApp.swift; sourceTree = "<group>"; };
 		6EC1E3312C1C8954009C999C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				6EC1E3492C1C9150009C999C /* LocationView.swift */,
 				6EC1E34D2C1CB91D009C999C /* LocationListView.swift */,
 				6EE1AE6C2C1DD94F00B9AA27 /* LocationPreviewView.swift */,
+				6EADAD1A2C21CFD2009B228C /* LocationMapAnnotationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EC1E3322C1C8954009C999C /* ContentView.swift in Sources */,
+				6EADAD1B2C21CFD2009B228C /* LocationMapAnnotationView.swift in Sources */,
 				6EC1E34A2C1C9150009C999C /* LocationView.swift in Sources */,
 				6EE1AE6D2C1DD94F00B9AA27 /* LocationPreviewView.swift in Sources */,
 				6EC1E3302C1C8954009C999C /* MapAppApp.swift in Sources */,

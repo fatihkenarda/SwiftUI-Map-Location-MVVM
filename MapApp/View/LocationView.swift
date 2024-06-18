@@ -14,23 +14,14 @@ struct LocationView: View {
     
     var body: some View {
         ZStack{
-            Map(coordinateRegion: $locationViewModel.mapRegion)
-                .ignoresSafeArea()
-            
+            mapAnnotationLayer
             VStack {
                 header
                     .padding()
                 Spacer()
                 
-                ForEach(locationViewModel.locations) { location in
-                    if locationViewModel.mapLocation == location {
-                        LocationPreviewView(location: location)
-                            .shadow(color: Color/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/.opacity(3.0),
-                                    radius: 10)
-                            .padding()
-                            .transition(.asymmetric(insertion: .move(edge: .trailing),
-                                                    removal: .move(edge: .leading)))
-                    }
+                ZStack{
+                    locationsPreviewStack
                 }
             }
         }
@@ -70,5 +61,35 @@ extension LocationView {
         .background(.thickMaterial)
         .cornerRadius(10)
         .shadow(color: Color.black.opacity(0.3), radius: 20)
+    }
+    
+    private var mapAnnotationLayer: some View {
+        Map(coordinateRegion: $locationViewModel.mapRegion,
+            annotationItems: locationViewModel.locations,
+            annotationContent: { location in
+            MapAnnotation(coordinate: location.coordinates){
+                LocationMapAnnotationView()
+                    .scaleEffect(locationViewModel.mapLocation == location ? 1 : 0.7)
+                    .shadow(radius: 10)
+                    .onTapGesture {
+                        locationViewModel.showNextLocation(location: location)
+                    }
+            }
+            
+        }
+        )
+    }
+    
+    private var locationsPreviewStack: some View {
+        ForEach(locationViewModel.locations) { location in
+            if locationViewModel.mapLocation == location {
+                LocationPreviewView(location: location)
+                    .shadow(color: Color/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/.opacity(3.0),
+                            radius: 10)
+                    .padding()
+                    .transition(.asymmetric(insertion: .move(edge: .trailing),
+                                            removal: .move(edge: .leading)))
+            }
+        }
     }
 }
