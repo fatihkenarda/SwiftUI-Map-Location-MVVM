@@ -17,6 +17,7 @@
 		6EC1E3482C1C8FF1009C999C /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1E3472C1C8FF1009C999C /* LocationViewModel.swift */; };
 		6EC1E34A2C1C9150009C999C /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1E3492C1C9150009C999C /* LocationView.swift */; };
 		6EC1E34E2C1CB91D009C999C /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1E34D2C1CB91D009C999C /* LocationListView.swift */; };
+		6ED1907E2C23625800EDCBBD /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1907D2C23625800EDCBBD /* LocationDetailView.swift */; };
 		6EE1AE6D2C1DD94F00B9AA27 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE1AE6C2C1DD94F00B9AA27 /* LocationPreviewView.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		6EC1E3472C1C8FF1009C999C /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		6EC1E3492C1C9150009C999C /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		6EC1E34D2C1CB91D009C999C /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		6ED1907D2C23625800EDCBBD /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		6EE1AE6C2C1DD94F00B9AA27 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 				6EC1E34D2C1CB91D009C999C /* LocationListView.swift */,
 				6EE1AE6C2C1DD94F00B9AA27 /* LocationPreviewView.swift */,
 				6EADAD1A2C21CFD2009B228C /* LocationMapAnnotationView.swift */,
+				6ED1907D2C23625800EDCBBD /* LocationDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				6EC1E3462C1C8A32009C999C /* Location.swift in Sources */,
 				6EC1E34E2C1CB91D009C999C /* LocationListView.swift in Sources */,
 				6EC1E3482C1C8FF1009C999C /* LocationViewModel.swift in Sources */,
+				6ED1907E2C23625800EDCBBD /* LocationDetailView.swift in Sources */,
 				6EC1E3442C1C8A15009C999C /* LocationsDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,15 +15,17 @@ struct LocationView: View {
     var body: some View {
         ZStack{
             mapAnnotationLayer
+                .ignoresSafeArea()
             VStack {
                 header
                     .padding()
                 Spacer()
+                locationsPreviewStack
                 
-                ZStack{
-                    locationsPreviewStack
-                }
             }
+        }
+        .sheet(item: $locationViewModel.sheetLocation, onDismiss: nil) { location in
+            LocationDetailView(location: location)
         }
     }
 }
@@ -75,7 +77,6 @@ extension LocationView {
                         locationViewModel.showNextLocation(location: location)
                     }
             }
-            
         }
         )
     }

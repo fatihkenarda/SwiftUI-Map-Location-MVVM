@@ -27,6 +27,8 @@ class LocationViewModel: ObservableObject {
     
     @Published var showLocationList: Bool = false
     
+    @Published var sheetLocation: Location? = nil
+    
     init() {
         let locations = LocationsDataService.locations
         self.locations = locations
