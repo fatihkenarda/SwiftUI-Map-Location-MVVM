@@ -11,6 +11,7 @@ import MapKit
 struct LocationView: View {
     
     @EnvironmentObject private var locationViewModel : LocationViewModel
+    let maxWidthForIpad: CGFloat = 700
     
     var body: some View {
         ZStack{
@@ -88,6 +89,8 @@ extension LocationView {
                     .shadow(color: Color/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/.opacity(3.0),
                             radius: 10)
                     .padding()
+                    .frame(maxWidth: maxWidthForIpad)
+                    .frame(maxWidth: .infinity)
                     .transition(.asymmetric(insertion: .move(edge: .trailing),
                                             removal: .move(edge: .leading)))
             }

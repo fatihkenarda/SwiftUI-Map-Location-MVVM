@@ -61,7 +61,7 @@ extension LocationPreviewView {
         VStack(alignment: .leading, spacing: 6.0) {
             Text(location.name)
                 .font(.title2)
-            .fontWeight(.bold)
+                .fontWeight(.bold)
             
             Text(location.cityName)
                 .font(.subheadline)

@@ -14,7 +14,7 @@ struct LocationDetailView: View {
     @EnvironmentObject private var locationViewModel: LocationViewModel
     
     var body: some View {
-        ScrollView {
+        ScrollView {	
             VStack {
                 imageSection
                     .shadow(color: Color.black.opacity(0.3),
@@ -51,7 +51,7 @@ extension LocationDetailView {
                 Image($0)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: UIScreen.main.bounds.width)
+                    .frame(width: UIDevice.current.userInterfaceIdiom == .pad ? nil : UIScreen.main.bounds.width)
                     .clipped()
             }
         }
